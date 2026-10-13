@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analytics</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            margin: 0;
+            padding: 30px;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            background: #1d4ed8;
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(200px, 1fr)
+            );
+            gap: 18px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Performance Analytics</h1>
+            <p>EWB EduTech Python With AI Internship Project</p>
+        </header>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p class="number">{{ total_students }}</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Departments</h3>
+                <p class="number">{{ departments }}</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Marks</h3>
+                <p class="number">{{ average_marks }}%</p>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+    <h3>Department-wise Average Marks</h3>
+    <p>CSE: 73.94</p>
+    <p>IT: 86.50</p>
+</div>
+</body>
+</html>
